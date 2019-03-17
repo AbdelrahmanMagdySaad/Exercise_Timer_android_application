@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Main2Activity">
+
+    <LinearLayout
+        android:id="@+id/nplayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <NumberPicker
+            android:id="@+id/npset"
+            style="@style/NumberPickerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:textStyle="bold|italic"
+            android:theme="@style/NumberPickerText" />
+
+        <NumberPicker
+            android:id="@+id/workmin"
+            style="@style/NumberPickerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:textStyle="bold|italic"
+            android:theme="@style/NumberPickerText" />
+
+
+
+        <NumberPicker
+            android:id="@+id/worksec"
+            style="@style/NumberPickerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:textStyle="bold|italic"
+            android:theme="@style/NumberPickerText" />
+
+
+
+        <NumberPicker
+            android:id="@+id/restmin"
+            style="@style/NumberPickerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:descendantFocusability="blocksDescendants"
+            android:theme="@style/NumberPickerText"
+            />
+        <NumberPicker
+            android:id="@+id/restsec"
+            style="@style/NumberPickerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:textStyle="bold|italic"
+            android:theme="@style/NumberPickerText" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btngo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="115dp"
+        android:background="@color/darkindigo"
+        android:text="GO"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="220dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/npset"
+            android:layout_alignStart="@+id/npset"
+            android:layout_alignEnd="@+id/npset"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:gravity="center"
+            android:text="Sets"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/workmin"
+            android:layout_alignStart="@+id/workmin"
+            android:layout_alignEnd="@+id/workmin"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:text="work min"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/worksec"
+            android:layout_alignStart="@+id/worksec"
+            android:layout_alignEnd="@+id/worksec"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="work sec"
+            android:textColor="#FFFFFF" />
+
+
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/restmin"
+            android:layout_alignStart="@+id/restmin"
+            android:layout_alignEnd="@+id/restmin"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="7dp"
+            android:gravity="center"
+            android:text="rest min"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/restsec"
+            android:layout_alignStart="@+id/restsec"
+            android:layout_alignEnd="@+id/restsec"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="rest sec"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
